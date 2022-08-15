@@ -1,6 +1,6 @@
 # shell_profiles
 
-<img src="C:\Users\jacks\Dropbox\shell_profiles\shell.png" alt="shell" style="zoom: 33%;" />
+<img src="./shell.png" alt="shell" style="zoom: 33%;" />
 
 **Teleport around your machine** with the terminal with **custom links**.
 
