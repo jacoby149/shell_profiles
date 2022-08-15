@@ -1,0 +1,1 @@
+source ~/Dropbox/shell_profiles/.bash_rc

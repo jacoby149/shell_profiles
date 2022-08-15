@@ -1,0 +1,19 @@
+#display messages
+echo "commands - see a list of commands"
+echo "links - see a list of links"
+function commands(){echo "see dc serve profiles vc refresh"}
+function links(){echo "home box gh web10"}
+
+# commands
+function see(){open -a "QSpace Pro" .}
+function dc(){docker-compose up --build}
+function serve(){open -a "Google Chrome" "http://localhost:8000" && python -m http.server}
+function profiles(){code ~/Dropbox/shell_profiles}
+function vc(){code .}
+function refresh(){source ~/.zshrc}
+
+#links
+function box(){cd ~/Dropbox}
+function gh(){cd ~/Documents/GitHub}
+function web10(){cd ~/Documents/GitHub/web10}
+function home(){cd ~}
