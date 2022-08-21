@@ -31,3 +31,5 @@ However, feel free to fork the project and use a syncing setup of your own.
    * On **Windows**, copy the **WindowsPowerShell** folder into my documents.
    * On **Mac**, copy the **.zshrc** into the home directory.
    * **Linux**, copy the **.bash_profile** into the home directory.
+   
+also, add "code" to your path in vscode
