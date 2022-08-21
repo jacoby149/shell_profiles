@@ -1,1 +1,1 @@
-source ~/Dropbox/shell_profiles/.bash_rc
+source ~/Documents/GitHub/shell_profiles/.bash_rc
