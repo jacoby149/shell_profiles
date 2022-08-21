@@ -14,7 +14,7 @@ Type profiles, to **upgrade your experience**,
 
 
 
-Dropbox is used to sync settings across all of my work stations.
+Github is used to sync settings across all of my work stations.
 
 VS Code is used to modify profiles.
 
@@ -24,10 +24,8 @@ However, feel free to fork the project and use a syncing setup of your own.
 
 ## Installation
 
-1. Install Dropbox.
-
-2. Fork shell_profiles,
-3. Clone your fork into your Dropbox folder.
+1. Fork shell_profiles,
+2. Clone your fork into your Documents/Github folder.
 
 4. Install :
    * On **Windows**, copy the **WindowsPowerShell** folder into my documents.
