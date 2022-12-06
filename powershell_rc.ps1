@@ -7,7 +7,7 @@ echo "links - see a list of links"
 echo "spots - see a list of places"
 
 function commands(){echo "see dc profiles down refresh"}
-function links(){echo "home box gh mix web10 web20" }
+function links(){echo "home box g mix web10 web20" }
 function spots(){echo "album caps shots pics self starlog"}
 
 # commands
@@ -23,10 +23,11 @@ $videos = [environment]::getfolderpath("myvideos")
 
 #links
 function box(){cd ~/Dropbox}
-function gh(){cd ~/OneDrive/Documents/GitHub}
+function g(){cd $documents/GitHub}
 function home(){cd ~}
 function mix(){cd "~\Dropbox\lil_k\mixxx"}
 function web10(){cd $documents/GitHub/web10}
+function net(){cd $documents/GitHub/web10-network}
 function web20(){cd $documents/GitHub/web20}
 
 #spots
