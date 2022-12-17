@@ -6,13 +6,14 @@ echo "commands - see a list of commands"
 echo "links - see a list of links"
 echo "spots - see a list of places"
 
-function commands(){echo "see dc profiles down refresh"}
+function commands(){echo "see dc dd profiles down refresh links spots"}
 function links(){echo "home box g mix web10 web20" }
 function spots(){echo "album caps shots pics self starlog"}
 
 # commands
 function see(){explorer .}
 function dc(){docker-compose up --build}
+function dd(){docker-compose down}
 function profiles(){code $env:HOMEPATH/Dropbox/shell_profiles}
 function down($url){youtube-dl -o "%(title)s.%(ext)s" --format mp4 --write-description  $url} #-x -k}
 function serve(){python -m http.server}
