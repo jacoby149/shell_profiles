@@ -13,9 +13,10 @@ function spots(){echo "album caps shots pics self starlog"}
 # commands
 function see(){explorer .}
 function dc(){docker-compose up --build}
+function dcl(){docker-compose -f docker-compose-lite.yml up --build }
 function dd(){docker-compose down}
 function profiles(){code $env:HOMEPATH/Dropbox/shell_profiles}
-function down($url){youtube-dl -o "%(title)s.%(ext)s" --format mp4 --write-description  $url} #-x -k}
+function down($url){yt-dlp -o "%(title)s.%(ext)s" --format mp4 --write-description  $url} #-x -k}
 function serve(){python -m http.server}
 function refresh(){. $profile}
 
