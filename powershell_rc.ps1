@@ -24,6 +24,7 @@ $documents = [environment]::getfolderpath("mydocuments")
 $videos = [environment]::getfolderpath("myvideos")
 
 #links
+function gpt {cd $documents/GitHub/chatbot-ui}
 function box(){cd ~/Dropbox}
 function g(){cd $documents/GitHub}
 function home(){cd ~}
@@ -34,7 +35,7 @@ function social(){cd $documents/GitHub/web10-social}
 
 #spots
 function starlog{cd "~\Dropbox\starlog"; start notepad++ .}
-function album{cd "~\Dropbox\lil_k\3023";see}
+function album{cd "~\Dropbox\lil_k\3024";see}
 function caps(){cd "~\Dropbox\Capture";see}
 function shots(){cd "~\Dropbox\Screenshots";see}
 function pics(){cd "~\Dropbox\cute pics";see}
