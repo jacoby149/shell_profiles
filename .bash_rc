@@ -1,24 +1,27 @@
 #display messages
-echo "commands - see a list of commands";
-echo "links - see a list of links";
-function commands(){echo "see dc dq serve profiles vc refresh ranger"}
-function links(){echo "home box g web10"}
+echo 'commands - see a list of commands';
+echo 'links - see a list of links';
+alias commands='echo "see dc dq serve profiles vc refresh ranger"'
+alias links='echo "home box g web10"'
 
 # commands
-function see(){open .}
-function dc(){sudo docker-compose up --build}
-function dq(){sudo docker-compose down}
-function profiles(){nvim ~/Documents/GitHub/shell_profiles}
-function refresh(){source ~/.bash_profile}
-function r(){ranger}
-function ds(){sudo systemctl start docker}
+alias see='open .'
+alias dc='sudo docker-compose up --build'
+alias dq='sudo docker-compose down'
+alias profiles='nvim ~/Documents/GitHub/shell_profiles'
+alias refresh='source ~/.bash_profile'
+alias r='source ranger'
+alias ds='sudo systemctl start docker'
+
 #links
-function g(){cd ~/Documents/GitHub}
-function web10(){cd ~/Documents/GitHub/web10}
-function home(){cd ~}
+alias c='cd ~/Documents/GitHub'
+alias web10='cd ~/Documents/GitHub/web10'
+alias home='cd ~'
 
 #start up tmux, dont let it start within itself!!!
 
 if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] && [[ ! "$TERM" =~ tmux ]] && [ -z "$TMUX" ]; then
   exec tmux
 fi
+
+export EDITOR='lvim'
