@@ -1,1 +1,13 @@
 desktop.ini
+ubuntu_config/BraveSoftware/*
+ubuntu_config/Code/*
+ubuntu_config/enchant/*
+ubuntu_config/evolution/*
+ubuntu_config/GitKraken/*
+ubuntu_config/gnome-control-center/*
+ubuntu_config/gnome-initial-setup-done
+ubuntu_config/google-chrome/*
+ubuntu_config/ibus/*
+ubuntu_config/menus/*
+ubuntu_config/pulse/*
+ubuntu_config/nextjs-nodejs/config.json

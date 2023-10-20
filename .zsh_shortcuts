@@ -8,14 +8,17 @@ alias links='echo "home box g web10"'
 alias see='open .'
 alias dc='sudo docker-compose up --build'
 alias dq='sudo docker-compose down'
-alias profiles='lvim ~/Documents/GitHub/shell_profiles/.bash_rc'
+alias profiles='lvim ~/Dropbox/shell_profiles/.zsh_shortcuts'
 alias refresh='source ~/.zshrc'
 alias r='source ranger'
 alias ds='sudo systemctl start docker'
-
+alias solver='echo "tony famigliano is ready to fuckin code."; while true; do; g++ solution.cpp; ./a.out < input.txt > output.txt; sleep 1; done'
+alias starlog='lvim ~/Dropbox/starlog/todo.md'
+alias sync_config='rm -r ~/.config; ln -sf ~/Dropbox/shell_profiles/ubuntu_config ~/.config'
 #links
 alias c='cd ~/Documents/GitHub'
 alias web10='cd ~/Documents/GitHub/web10'
+alias box='cd ~/Dropbox'
 alias home='cd ~'
 
 #start up tmux, dont let it start within itself!!!
@@ -24,6 +27,13 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
   exec tmux
 fi
 
+export PATH="$HOME/.local/bin:$PATH"
 export EDITOR='lvim'
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/go/bin
+
+# pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+

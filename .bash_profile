@@ -1,1 +1,0 @@
-source ~/Documents/GitHub/shell_profiles/.bash_rc
