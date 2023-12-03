@@ -1,0 +1,6 @@
+BraveSoftware
+Signal
+GIMP
+guvcview2
+vlc
+dconf

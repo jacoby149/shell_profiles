@@ -22,7 +22,7 @@ However, feel free to fork the project and use a syncing setup of your own.
 
 
 
-## Installation
+## Basic Installation
 
 1. Fork shell_profiles,
 2. Clone your fork into your ~/Dropbox folder.
@@ -31,5 +31,9 @@ However, feel free to fork the project and use a syncing setup of your own.
    * On **Mac or Linux :** 
      1. install *zshell* 
      2. copy the **.zshrc** into the home directory OR copy the line from the .zshrc into your .zshrc that is currently in your home directory.
-     3. run sync_config to sync the config on your machine with the others.
+ 
+## Config Installation
+ 3. run sync_config to sync the config on your machine with the others.
 
+## XRDP Installation
+If you want audio on an xrdp server, run the xrdp-installer.sh with --sound

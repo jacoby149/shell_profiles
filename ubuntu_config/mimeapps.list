@@ -9,3 +9,4 @@ text/plain=lvim.desktop
 [Added Associations]
 text/plain=lvim.desktop;
 application/vnd.debian.binary-package=snap-store_ubuntu-software-local-file.desktop;
+application/x-shellscript=org.gnome.gedit.desktop;

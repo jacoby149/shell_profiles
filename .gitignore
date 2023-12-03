@@ -11,3 +11,5 @@ ubuntu_config/ibus/*
 ubuntu_config/menus/*
 ubuntu_config/pulse/*
 ubuntu_config/nextjs-nodejs/config.json
+ESPORTS_STREAMING.json
+ubuntu_config/gh/hosts.yml

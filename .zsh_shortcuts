@@ -1,13 +1,14 @@
 #display messages
 echo 'commands - see a list of commands';
 echo 'links - see a list of links';
-alias commands='echo "see dc dq serve profiles vc refresh ranger"'
+alias commands='echo "see ds dc dq dps dshell profiles vc refresh ranger solver starlog sync_config bw_login verizon"'
 alias links='echo "home box g web10"'
 
 # commands
 alias see='open .'
-alias dc='sudo docker-compose up --build'
+alias dc='sudo -E docker-compose up --build'
 alias dq='sudo docker-compose down'
+alias dps='sudo docker ps'
 alias profiles='lvim ~/Dropbox/shell_profiles/.zsh_shortcuts'
 alias refresh='source ~/.zshrc'
 alias r='source ranger'
@@ -15,6 +16,20 @@ alias ds='sudo systemctl start docker'
 alias solver='echo "tony famigliano is ready to fuckin code."; while true; do; g++ solution.cpp; ./a.out < input.txt > output.txt; sleep 1; done'
 alias starlog='lvim ~/Dropbox/starlog/todo.md'
 alias sync_config='rm -r ~/.config; ln -sf ~/Dropbox/shell_profiles/ubuntu_config ~/.config'
+# sudo usermod -a -G audio $(whoami)
+# allows audio control over xrdp
+alias verizon='sudo ip route add default via 192.168.1.254'
+alias xfinvpn='sudo ip route add 192.168.254.0/24 via 192.168.1.1 dev eno1'
+
+alias sscreen='xrandr --newmode "1536x1026"  131.52  1536 1632 1800 2064  1026 1027 1030 1062  -HSync +Vsync'
+alias ascreen='xrandr --addmode eDP-1 "1536x1026"'
+alias mscreen='xrandr -s 1536x1026'
+alias sam='sscreen;ascreen;mscreen;'
+
+dshell(){
+  sudo docker exec -it $(sudo docker ps -aqf name=$1) bash
+}
+
 #links
 alias c='cd ~/Documents/GitHub'
 alias web10='cd ~/Documents/GitHub/web10'
@@ -31,9 +46,8 @@ export PATH="$HOME/.local/bin:$PATH"
 export EDITOR='lvim'
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:~/go/bin
-
+export GIT_CONFIG_GLOBAL="$HOME/.config/.gitconfig"
 # pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv virtualenv-init -)"
-
