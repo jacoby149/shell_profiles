@@ -13,3 +13,4 @@ ubuntu_config/pulse/*
 ubuntu_config/nextjs-nodejs/config.json
 ESPORTS_STREAMING.json
 ubuntu_config/gh/hosts.yml
+ubuntu_config/signal-desktop-keyring.gpg
