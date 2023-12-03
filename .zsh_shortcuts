@@ -15,12 +15,14 @@ alias r='source ranger'
 alias ds='sudo systemctl start docker'
 alias solver='echo "tony famigliano is ready to fuckin code."; while true; do; g++ solution.cpp; ./a.out < input.txt > output.txt; sleep 1; done'
 alias starlog='lvim ~/Dropbox/starlog/todo.md'
-alias sync_config='rm -r ~/.config; ln -sf ~/Dropbox/shell_profiles/ubuntu_config ~/.config'
+alias sync_config='rm -r ~/.config; ln -sf ~/Dropbox/shell_profiles/ubuntu_config ~/.config;~/Dropbox/shell_profiles/local_config/local_config.sh'
 # sudo usermod -a -G audio $(whoami)
+#
 # allows audio control over xrdp
 alias verizon='sudo ip route add default via 192.168.1.254'
 alias xfinvpn='sudo ip route add 192.168.254.0/24 via 192.168.1.1 dev eno1'
 
+# for configuring my microsoft surface screen res.
 alias sscreen='xrandr --newmode "1536x1026"  131.52  1536 1632 1800 2064  1026 1027 1030 1062  -HSync +Vsync'
 alias ascreen='xrandr --addmode eDP-1 "1536x1026"'
 alias mscreen='xrandr -s 1536x1026'
