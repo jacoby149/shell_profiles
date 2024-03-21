@@ -35,7 +35,7 @@ function social(){cd $documents/GitHub/web10-social}
 
 #spots
 function starlog{cd "~\Dropbox\starlog"; start notepad++ .}
-function album{cd "~\Dropbox\lil_k\3024";see}
+function album{cd "~\Dropbox\lil_k\;see"}
 function caps(){cd "~\Dropbox\Capture";see}
 function shots(){cd "~\Dropbox\Screenshots";see}
 function pics(){cd "~\Dropbox\cute pics";see}

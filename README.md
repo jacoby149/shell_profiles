@@ -37,3 +37,7 @@ However, feel free to fork the project and use a syncing setup of your own.
 
 ## XRDP Installation
 If you want audio on an xrdp server, run the xrdp-installer.sh with --sound
+
+## Note on server backups
+The ubuntu server rack is backed up with timeshift currently.
+timeshift-gtk

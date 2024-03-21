@@ -1,7 +1,7 @@
 #display messages
 echo 'commands - see a list of commands';
 echo 'links - see a list of links';
-alias commands='echo "see ds dc dq dps dshell profiles vc refresh ranger solver starlog sync_config bw_login verizon"'
+alias commands='echo "see ds dc dq dps dshell profiles vc refresh ranger solver starlog sync_config bw_login xfin verizon xfinvpn delroute lavacam compass backup"'
 alias links='echo "home box g web10"'
 
 # commands
@@ -19,8 +19,15 @@ alias sync_config='rm -r ~/.config; ln -sf ~/Dropbox/shell_profiles/ubuntu_confi
 # sudo usermod -a -G audio $(whoami)
 #
 # allows audio control over xrdp
+alias xfin='sudo ip route add default via 192.168.1.1'
 alias verizon='sudo ip route add default via 192.168.1.254'
 alias xfinvpn='sudo ip route add 192.168.254.0/24 via 192.168.1.1 dev eno1'
+alias delroute='sudo ip route del default'
+# xhost +
+# allows x11 apps with auth issues to work.
+
+alias compass='mongodb-compass'
+alias backup='sudo timeshift-gtk'
 
 # for configuring my microsoft surface screen res.
 alias sscreen='xrandr --newmode "1536x1026"  131.52  1536 1632 1800 2064  1026 1027 1030 1062  -HSync +Vsync'
@@ -28,8 +35,11 @@ alias ascreen='xrandr --addmode eDP-1 "1536x1026"'
 alias mscreen='xrandr -s 1536x1026'
 alias sam='sscreen;ascreen;mscreen;'
 
+# cam
+alias lavacam='guvcview' 
+
 dshell(){
-  sudo docker exec -it $(sudo docker ps -aqf name=$1) bash
+  sudo docker exec -it $(sudo docker ps -aqf name=$1) sh
 }
 
 #links

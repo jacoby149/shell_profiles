@@ -13,3 +13,7 @@ lvim.format_on_save.enabled = true
 vim.opt.textwidth = 80 -- wrap lines
 vim.opt.autoread = true
 vim.opt.clipboard = "unnamedplus"
+vim.opt.wrap = true
+vim.opt.rnu = true
+lvim.keys.normal_mode["W"] = ":w<cr>"
+lvim.keys.normal_mode["Q"] = ":q<cr>"
