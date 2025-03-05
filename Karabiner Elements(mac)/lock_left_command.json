@@ -1,5 +1,5 @@
 {
-    "description": "Make caps lock into left control just in Kitty",
+    "description": "Lock down left command just in Kitty",
     "manipulators": [
         {
             "conditions": [
@@ -11,7 +11,7 @@
                 }
             ],
             "from": {
-                "key_code": "caps_lock",
+                "key_code": "left_command",
                 "modifiers": {
                     "optional": [
                         "any"
@@ -20,7 +20,7 @@
             },
             "to": [
                 {
-                    "key_code": "left_control"
+                    "key_code": "left_command"
                 }
             ],
             "type": "basic"

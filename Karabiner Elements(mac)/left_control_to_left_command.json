@@ -1,9 +1,9 @@
 {
     "manipulators": [
         {
-            "description": "Change caps_lock to left command.",
+            "description": "Change left control to left command.",
             "from": {
-                "key_code": "caps_lock",
+                "key_code": "left_control",
                 "modifiers": {
                     "optional": [
                         "any"
