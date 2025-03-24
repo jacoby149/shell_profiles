@@ -16,3 +16,4 @@ ubuntu_config/gh/hosts.yml
 ubuntu_config/signal-desktop-keyring.gpg
 ubuntu_config/MongoDB Compass
 ubuntu_config/eog/accels
+**.DS_Store

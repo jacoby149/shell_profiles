@@ -1,0 +1,21 @@
+{
+    "manipulators": [
+        {
+            "description": "Change left control to left command.",
+            "from": {
+                "key_code": "left_control",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "left_command"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}

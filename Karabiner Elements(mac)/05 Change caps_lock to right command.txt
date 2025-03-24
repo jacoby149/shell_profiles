@@ -1,0 +1,21 @@
+{
+    "manipulators": [
+        {
+            "description": "Change caps_lock to right command.",
+            "from": {
+                "key_code": "caps_lock",
+                "modifiers": {
+                    "optional": [
+                        "any"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "right_command"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
